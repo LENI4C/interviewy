@@ -1,0 +1,18 @@
+Alphatwelve Frontend Development assessment 
+Project: Event Management Dashboard
+
+white - rgba(252, 247, 255, 1)
+light blue - rgba(133, 118, 255, 1)
+dark ash - rgba(72, 69, 84, 1)
+gray - rgba(173, 169, 187, 1)
+dark gray - rgba(106, 102, 118, 1)
+
+Sidebar Navigation: The sidebar should be collapsible, showing only icons when collapsed.
+Overview Cards: Display key metrics (e.g., Total Events, Active Speakers, Revenue) with hover animations.
+Interactive Chart: Use Chart.js or another charting library to display event statistics chart.
+Carousel Slider (Latest News & Updates): In addition to the manual navigation arrows, the carousel should auto-slide through news items.
+Modal Pop-Up: Clicking on an event should open the modal with event details, such as the description and attendee list.
+Mobile Version (Responsive Design):
+Ensure the sidebar becomes a collapsible hamburger menu.
+Cards, charts, and tables should be responsive and adapt to smaller screens as per the design.
+Dark Mode (Bonus): Provide a button to toggle between light and dark modes, altering background and text colors.
