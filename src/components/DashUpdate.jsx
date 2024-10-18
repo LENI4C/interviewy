@@ -5,9 +5,9 @@ const DashUpdate = () => {
     return (
         <>
             <h3>Event Registrations per month</h3>
-            <section className="border">
+            <section className="border flex ">
                 <ChartComponent />
-                {/* <Carousel /> */}
+                <Carousel />
             </section>
         </>
     );

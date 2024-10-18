@@ -17,8 +17,7 @@ const data = [
 ];
 
 const options = {
-    title: "Event Registrations per month",
-    chartArea: { width: "50%", height: "70%" }, // Adjust to fit like your image
+    chartArea: { width: "80%", height: "70%" }, // Adjust to fit like your image
     colors: ["#7c74f2"],
     hAxis: { title: "", textStyle: { fontSize: 12 } },
     vAxis: { minValue: 0, gridlines: { count: 5 } },
@@ -28,7 +27,7 @@ const options = {
 
 const ChartComponent = () => {
     return (
-        <div style={{ width: "100%", height: "320px" }}>
+        <div style={{ width: "360px", height: "320px" }}>
             <Chart
                 chartType="ColumnChart"
                 data={data}

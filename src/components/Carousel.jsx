@@ -1,17 +1,18 @@
-// Carousel.js
-import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Autoplay } from "swiper/modules";
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
-import "../assets/css/carousel.css";
+import img1 from "../assets/images/img1.jpg"
+import img2 from "../assets/images/img2.jpg"
+import img3 from "../assets/images/img3.jpg"
 
 const Carousel = () => {
     return (
         <Swiper
+            className="border w-[400px] h-[320px]"
             modules={[Navigation, Pagination, Autoplay]}
-            spaceBetween={30}
+            spaceBetween={10}
             slidesPerView={1}
             navigation
             pagination={{ clickable: true }}
@@ -21,52 +22,30 @@ const Carousel = () => {
             <SwiperSlide>
                 <div className="carousel-slide">
                     <img
-                        src="../assets/images/img1.jpg"
+                        src={img1}
                         alt="Slide 1"
                         className="carousel-image"
                     />
-                    <div className="carousel-content">
-                        <h3>Latest News & Updates</h3>
-                        <p>
-                            Turpis interdum nunc varius ornare dignissim
-                            pretium. Maecenas ornare quis aliquet sed velit.
-                            Pellentesque in ut tellus.
-                        </p>
-                    </div>
                 </div>
             </SwiperSlide>
 
             <SwiperSlide>
                 <div className="carousel-slide">
                     <img
-                        src="../assets/images/img2.jpg"
+                        src={img2}
                         alt="Slide 2"
                         className="carousel-image"
                     />
-                    <div className="carousel-content">
-                        <h3>New Event Launch</h3>
-                        <p>
-                            Fringilla purus, erat fringilla tincidunt quisque
-                            nunc. Vivamus tempus nulla at elit lobortis cursus.
-                        </p>
-                    </div>
                 </div>
             </SwiperSlide>
 
             <SwiperSlide>
                 <div className="carousel-slide">
                     <img
-                        src="../assets/images/img3.jpg"
+                        src={img3}
                         alt="Slide 3"
                         className="carousel-image"
                     />
-                    <div className="carousel-content">
-                        <h3>Exciting Announcements</h3>
-                        <p>
-                            Lorem ipsum dolor sit amet, consectetur adipiscing
-                            elit. Cras bibendum justo a varius volutpat.
-                        </p>
-                    </div>
                 </div>
             </SwiperSlide>
         </Swiper>
